@@ -14,6 +14,17 @@
 
   --stroke-default: #d6d3d1;
   --stroke-highlight: #f3541c;
-  --semantic-error: #dc2626;
-  
+  --semantic-error: #dc2626;  
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font: var(--text);
+}
+
+body {
+  overflow: hidden;
 }
