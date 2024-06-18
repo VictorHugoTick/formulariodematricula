@@ -23,8 +23,18 @@
   box-sizing: border-box;
 
   font: var(--text);
+  color: var(--text-secondary);
 }
 
 body {
   overflow: hidden;
+}
+
+h1, h2 {
+  color: var(--text-primary);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
