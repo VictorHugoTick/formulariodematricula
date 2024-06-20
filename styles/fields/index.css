@@ -75,7 +75,6 @@ input {
   }
 
   &[required] + .error {
-    margin-bottom: 50px;
     display: flex;
     align-items: center;
     gap: 0.4rem;
