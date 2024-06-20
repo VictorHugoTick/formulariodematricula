@@ -59,3 +59,36 @@ select {
     color: var(--text-primary);
   }
 }
+
+input {
+  &:invalid {
+    border: 2px solid var(--semantic-error);
+  }
+
+  & + small {
+    font: var(--text-sm);
+    color: #78716c;
+
+    display: inline-block;
+
+    margin-top: 0.4rem;
+  }
+
+  &[required] + .error {
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+
+    margin-top: 0.4rem;
+    
+    span {
+      font: var(--text-sm);
+      color: var(--semantic-error);
+    }
+  }
+
+  &:valid + .error {
+    opacity: 0;
+  }
+}
